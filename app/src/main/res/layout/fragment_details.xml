@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:indeterminateTintMode="src_atop"/>
+
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header_menu"/>
+
+                    <ImageView
+                        android:layout_gravity="right"
+                        android:id="@+id/favorite"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="center"
+                        android:src="@drawable/star"
+                        android:clickable="true"/>
+
+
+                    <LinearLayout
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#fff">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Price"
+                            android:textSize="10dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:id="@+id/price"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12dp"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/name"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="10dp"
+                    android:text="Type"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/type"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="10dp"
+                    android:text="Type room"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/type_room"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="10dp"
+                    android:text="Address"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/address"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15dp"
+                        android:text="@string/guest"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="28dp"
+                        android:text="2"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/guest"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15dp"
+                        android:text="@string/bedrooms"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="28dp"
+                        android:text="6"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bedrooms"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15dp"
+                        android:text="@string/beds"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="28dp"
+                        android:text="5"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/beds"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15dp"
+                        android:text="@string/bathrooms"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginTop="5dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="28dp"
+                        android:text="3"
+                        android:textStyle="italic"
+                        android:textColor="#fff"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bathrooms"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15dp"
+                    android:text="@string/description"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/description"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="bottom">
+                <com.google.android.gms.maps.MapView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
